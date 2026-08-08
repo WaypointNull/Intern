@@ -1,6 +1,6 @@
 {
   "name": "@waypointnull/tag-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deterministic booru-style tag search engine: normalize, match, resolve, suggest.",
   "author": "WaypointNull",
   "license": "WaypointNull Community License v1.0",
