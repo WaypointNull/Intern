@@ -1,0 +1,20 @@
+# AI/working memory and runtime data — never committed
+data/
+
+# deps / build
+node_modules/
+dist/
+build/*
+release/
+out/
+*.log
+
+# package tarballs / local registry
+*.tgz
+.npmrc
+
+# editor / OS junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

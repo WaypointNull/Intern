@@ -1,0 +1,28 @@
+{
+  "name": "intern",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collection of shared npm packages for the family (Akumu, Tsuki, Akira, UsagiAI).",
+  "author": "WaypointNull",
+  "license": "WaypointNull Community License v1.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "lint": "npx eslint .",
+    "format:check": "npx prettier --check .",
+    "format": "npx prettier --write .",
+    "pack:all": "npm pack --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.9.0",
+    "prettier": "^3.9.6"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+data/
+dist/
+release/
+build/
+package-lock.json
+**/README.md
+**/LICENSE.md

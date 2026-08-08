@@ -1,0 +1,30 @@
+{
+  "name": "@waypointnull/tag-search",
+  "version": "1.0.0",
+  "description": "Deterministic booru-style tag search engine: normalize, match, resolve, suggest.",
+  "author": "WaypointNull",
+  "license": "WaypointNull Community License v1.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "constants.js",
+    "parser.js",
+    "metrics.js",
+    "repository.js",
+    "retrieval.js",
+    "priority.js",
+    "suggest.js",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  }
+}
