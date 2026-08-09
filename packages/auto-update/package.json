@@ -1,0 +1,26 @@
+{
+  "name": "@waypointnull/auto-update",
+  "version": "1.0.0",
+  "description": "Tiny electron-updater wiring for the family desktop apps: check on start, notify when downloaded, restart to apply.",
+  "author": "WaypointNull",
+  "license": "WaypointNull Community License v1.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "electron-updater": ">=6"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  }
+}

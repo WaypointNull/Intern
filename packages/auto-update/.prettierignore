@@ -1,0 +1,6 @@
+node_modules/
+data/
+dist/
+README.md
+LICENSE.md
+package-lock.json
