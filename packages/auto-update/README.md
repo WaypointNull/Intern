@@ -3,7 +3,7 @@
 Message-only `electron-updater` wiring for the family desktop apps (UsagiAI, Akumu, Tsuki).
 
 This package owns the *update machinery* and nothing else: it checks for updates, downloads
-only on explicit consent, and talks to the front-end over IPC. It ships **no UI** — each app
+only on explicit consent, and talks to the front-end over IPC. It ships **no UI** â€” each app
 renders its own dialogs (shadcn `AlertDialog` on the Vue client).
 
 Pure Electron-main glue, zero runtime dependencies of its own.
@@ -21,9 +21,9 @@ electron-builder packages it and generates `app-update.yml` from your `publish` 
 
 | Direction | Channel             | Payload            | Meaning                         |
 | --------- | ------------------- | ------------------ | ------------------------------- |
-| main→ui   | `update:available`  | `{ version }`      | a newer version exists          |
-| main→ui   | `update:downloaded` | `{ version }`      | the new version is on disk      |
-| ui→main   | `update:respond`    | `"download"` \| `"restart"` \| `"later"` | the user's choice |
+| mainâ†’ui   | `update:available`  | `{ version }`      | a newer version exists          |
+| mainâ†’ui   | `update:downloaded` | `{ version }`      | the new version is on disk      |
+| uiâ†’main   | `update:respond`    | `"download"` \| `"restart"` \| `"later"` | the user's choice |
 
 - Nothing downloads until the front-end replies `"download"` (`autoDownload: false`).
 - `"restart"` quits and installs. `"later"` does nothing (a completed download installs on quit).
@@ -39,7 +39,7 @@ setupAutoUpdate({
 });
 ```
 
-In dev (unpackaged) everything stays inert — `setupAutoUpdate` returns `null`.
+In dev (unpackaged) everything stays inert â€” `setupAutoUpdate` returns `null`.
 
 ## Preload bridge (standalone window only)
 
@@ -68,4 +68,4 @@ if (window.updateBridge) {
 
 ## License
 
-WaypointNull Community License v1.0
+WaypointNull Community License v2.0

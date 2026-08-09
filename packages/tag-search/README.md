@@ -59,4 +59,4 @@ You can pre-seed the file to keep the package fully offline.
 
 ## License
 
-WaypointNull Community License v1.0
+WaypointNull Community License v2.0
