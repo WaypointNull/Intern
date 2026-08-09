@@ -1,6 +1,6 @@
 {
   "name": "@waypointnull/auto-update",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny electron-updater wiring for the family desktop apps: check on start, notify when downloaded, restart to apply.",
   "author": "WaypointNull",
   "license": "WaypointNull Community License v1.0",
